@@ -10,6 +10,13 @@ This document describes how to set up a sample Express app which talks to Slack,
 
 ## Getting credentials
 
+    Copy the .env.example to .en using: 
+    ```
+        cp .env.example .env
+    ```
+
+
+
 ### Watson Conversation
 Follow the steps outlined in [this document](https://github.com/watson-developer-cloud/conversation-simple/blob/master/README.md#configuring-the-application-environmnet) and paste your Conversation bot's credentials in the sample `.env` file in the project directory.
 
