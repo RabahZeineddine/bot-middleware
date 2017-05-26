@@ -33,8 +33,12 @@ controller.hears('(.*)', 'message_received', function (bot, message) {
         var prazo = context.prazo;
         var valor = context.valor;
         var carencia = context.carencia;
+        
+        console.log(prazo);
+        console.log(valor);
+        console.log(carencia);
         var options = {
-            url: "https://credito-pessoal-api.mybluemix.net/bv/api/v0/creditoPessoal/values?parcelas=" + prazo + "&carencia=" + carencia + "&valor=" + valor,
+            url: "http://credito-pessoal-api.mybluemix.net/bv/api/v0/creditoPessoal/values?parcelas=" + prazo + "&carencia=" + carencia + "&valor=" + valor,
             method: "GET",
             accept: "application/json"
         }
