@@ -11,6 +11,7 @@ This document describes how to set up a sample Express app which talks to Slack,
 ## Getting credentials
 
     Copy the .env.example to .en using: 
+    
     ```
         cp .env.example .env
     ```
